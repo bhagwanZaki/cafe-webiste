@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow-x: none !important;
+}
+
+body{
+  /* font-family: 'Montserrat', sans-serif; */
+  background-color: #373737;
+  color: #fff;
+  overflow-x: none !important;
+  font-family: 'Lobster Two', cursive;
+}
+
+body::-webkit-scrollbar {
+  width: 0rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #854F25;
+}
+
+
+.navBar{
+  width: 100%;
+  padding: 20px 20px !important;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  width: 3%;
+  height: min-content;
+}
+
+.navitems{
+  margin-right: 20px;
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+
+}
+
+.link{
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #373737;
+  padding: 10px 0px;
+  transition: 300ms ease-in;
+}
+
+.link:hover{
+  border-bottom: 1px solid #F9DEC7;
+  color: #F9DEC7;
+}

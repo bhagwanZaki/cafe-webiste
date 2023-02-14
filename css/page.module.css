@@ -1,0 +1,148 @@
+.landingSection {
+  display: flex;
+  min-height: 95vh;
+  max-height: 90vh !important;
+  padding: 0px 50px;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.msection {
+  background-color: #f9dec7;
+  color: #373737;
+  width: 100%;
+  padding: 50px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.serviceSection{
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+.bg {
+  position: absolute;
+  right: 30px;
+  width: 30%;
+  height: min-content;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 0px !important;
+  max-width: 700px;
+  z-index: 10;
+  gap: 55px;
+}
+.content h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+
+.content h1 span {
+  font-family: "Lobster Two", cursive;
+  font-weight: 700;
+  font-size: 3rem;
+  margin: 0px 5px;
+}
+
+.content h1 span u {
+  transition: 200ms ease-in;
+  padding-left: 5px;
+  padding-right: 5px;
+  cursor: grab;
+}
+.content h1 span u:hover {
+  background-color: #f9dec7;
+  color: #373737;
+}
+
+.btn {
+  transition: 200ms ease-in;
+  width: max-content;
+  text-decoration: none;
+  color: #373737;
+  padding: 10px 20px;
+  background-color: #f9dec7;
+  font-size: 1.3rem;
+  border: 1px solid #f9dec7;
+}
+
+.btn:hover {
+  background-color: #373737;
+  color: #f9dec7;
+}
+
+.leftpart {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: flex-start;
+}
+
+.leftpart h1 {
+  font-size: 5rem;
+}
+
+.browse {
+  font-family: "Montserrat", sans-serif;
+  color: #854f25;
+  border-bottom: 3px solid #854f25;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 5px 0px;
+  width: max-content;
+  transition: 300ms ease-in;
+}
+
+.browse:hover{
+    color: #373737;
+    border-bottom: 3px solid #373737;
+}
+.rightpart{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.foodCard{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 25px;
+    background-color: #854f25;
+    border-radius: 32px;
+}
+
+.foodCard h3{
+    color: #fff;
+    font-size: 2.2rem;
+}
+
+.foodImg1{
+    width: max-content;
+    height: 70%;
+}
+
+.serviceSection h1{
+    font-size: 4.5rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.serviceSection h1 span{
+    color: #f9dec7;
+    font-size: 5.5rem;
+    font-weight: 700;
+}

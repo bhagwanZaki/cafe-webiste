@@ -1,91 +1,104 @@
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from './page.module.css'
+// libraries
+import React from "react";
+import Image from "next/image";
 
-const inter = Inter({ subsets: ['latin'] })
+// css
+import styles from "../css/page.module.css";
 
-export default function Home() {
+// assets
+import bg from "../assets/bg.png";
+import c1 from "../assets/coffee-1.png";
+import c2 from "../assets/coffee-2.png";
+import c3 from "../assets/coffee-3.png";
+import c4 from "../assets/coffee-4.png";
+import logo2 from "../assets/logo2.png";
+import Link from "next/link";
+
+function page() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <section className={styles.landingSection}>
+        <div className={styles.content}>
+          <h1>
+            Enjoy the most <span>satisfying </span>
+            <br/> cup of <span><u>coffee</u></span> you've ever had.
+          </h1>
+          <Link href={"/"} className={styles.btn}>
+              Visit Nearest Branch
+          </Link>
+        </div>  
+        <Image className={styles.bg} src={bg} />
+      </section>
+      <section className={styles.msection}>
+        <div className={styles.leftpart} >
+          <h1>
+            Our Monthly<br/>Top Pick
+          </h1>
+          <Link href={"/"} className={styles.browse}>
+            Browse Our Menu
+          </Link>
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
+        <div className={styles.rightpart} >
+            <div className={styles.foodCard}>
+              <Image src={c3} className={styles.foodImg1} />
+              <h3>
+              Dalgona 
+              </h3>
+            </div>
+            <div className={styles.foodCard}>
+              <Image src={c4} className={styles.foodImg1} />
+              <h3>
+                Latte
+              </h3>
+            </div>
+            <div className={styles.foodCard}>
+              <Image src={c1} className={styles.foodImg1} />
+              <h3>
+                Capachino
+              </h3>
+            </div>
+            <div className={styles.foodCard}>
+              <Image src={c2} className={styles.foodImg1} />
+              <h3>
+                Coffee
+              </h3>
+            </div>
         </div>
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+      </section>
+      <section className={styles.serviceSection}>
+        <h1>
+          What Sets Us <span>Apart</span>
+        </h1>
+        <div className={styles.serviceDiv}>
+          <div className={styles.serviceCard}>
+            <h2>
+              Free WIFI
+            </h2>
+          </div>
+          <div className={styles.serviceCard}>
+            <h2>
+              Free WIFI
+            </h2>
+          </div>
+          <div className={styles.serviceCard}>
+            <h2>
+              Free WIFI
+            </h2>
+          </div>
+          <div className={styles.serviceCard}>
+            <h2>
+              Free WIFI
+            </h2>
+          </div>
+          <div className={styles.serviceCard}>
+            <h2>
+              Free WIFI
+            </h2>
+          </div>
+        </div>
+      </section>
+    </>
+  );
 }
+
+export default page;
