@@ -146,3 +146,27 @@
     font-size: 5.5rem;
     font-weight: 700;
 }
+
+.serviceDiv{
+    width: 100%;
+    display: grid;
+    grid-column-gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.serviceCard{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+    border-radius: 30px;
+    border: 5px solid #854f25;
+}
+
+.serviceCard h2{
+    text-align: center;
+  font-family: "Montserrat", sans-serif;
+    color: #f9dec7;
+}

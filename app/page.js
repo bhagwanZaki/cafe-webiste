@@ -1,18 +1,25 @@
 // libraries
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 // css
 import styles from "../css/page.module.css";
 
-// assets
+// imgs
 import bg from "../assets/bg.png";
 import c1 from "../assets/coffee-1.png";
 import c2 from "../assets/coffee-2.png";
 import c3 from "../assets/coffee-3.png";
 import c4 from "../assets/coffee-4.png";
 import logo2 from "../assets/logo2.png";
-import Link from "next/link";
+
+// icons
+import icon1 from "../assets/wifi.png"
+import icon2 from "../assets/cater.png"
+import icon3 from "../assets/deliver.png"
+import icon4 from "../assets/music.png"
+import icon5 from "../assets/rent.png"
 
 function page() {
   return (
@@ -71,28 +78,33 @@ function page() {
         </h1>
         <div className={styles.serviceDiv}>
           <div className={styles.serviceCard}>
+            <Image src={icon1} />
             <h2>
               Free WIFI
             </h2>
           </div>
           <div className={styles.serviceCard}>
+            <Image src={icon2} />
             <h2>
-              Free WIFI
+              Catering
             </h2>
           </div>
           <div className={styles.serviceCard}>
+            <Image src={icon3} />
             <h2>
-              Free WIFI
+              Delivery
             </h2>
           </div>
           <div className={styles.serviceCard}>
+            <Image src={icon4} />
             <h2>
-              Free WIFI
+              Live Music
             </h2>
           </div>
           <div className={styles.serviceCard}>
+            <Image src={icon5} />
             <h2>
-              Free WIFI
+              Event Space<br/>Rental
             </h2>
           </div>
         </div>
