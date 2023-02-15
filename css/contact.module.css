@@ -1,0 +1,49 @@
+.contactSection {
+  display: flex;
+  padding: 0px 10px;
+  justify-content: space-between;
+  width: 100%;
+  gap: 200px;
+  align-items: center;
+}
+.content{
+  width: 100%;
+}
+
+.content h1{
+  width: 100%;
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 20px 0px;
+}
+
+.input{
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid #db8d50;
+  background-color: #373737;
+  padding: 10px;
+  font-size: 1.2rem;
+  color: #f9dec7;
+}
+
+.btn{
+  width: 100%;
+  border: 1px solid #f9dec7;
+  background-color: #f9dec7;
+  padding: 10px;
+  font-family: "Lobster Two", cursive;
+  border-radius: 6px;
+  font-size: 1.3rem;
+}
+
+@media (max-width: 500px) {
+  .bg{
+    display: none;
+  }
+}

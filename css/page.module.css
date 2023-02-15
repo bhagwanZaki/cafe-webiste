@@ -18,12 +18,12 @@
   align-items: center;
 }
 
-.serviceSection{
-    padding: 20px 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    align-items: center;
+.serviceSection {
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
 }
 
 .bg {
@@ -104,69 +104,162 @@
   transition: 300ms ease-in;
 }
 
-.browse:hover{
-    color: #373737;
-    border-bottom: 3px solid #373737;
+.browse:hover {
+  color: #373737;
+  border-bottom: 3px solid #373737;
 }
-.rightpart{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-}
-
-.foodCard{
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 25px;
-    background-color: #854f25;
-    border-radius: 32px;
+.rightpart {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
 }
 
-.foodCard h3{
-    color: #fff;
-    font-size: 2.2rem;
+.foodCard {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 25px;
+  background-color: #854f25;
+  border-radius: 32px;
 }
 
-.foodImg1{
-    width: max-content;
-    height: 70%;
+.foodCard h3 {
+  color: #fff;
+  font-size: 2.2rem;
 }
 
-.serviceSection h1{
-    font-size: 4.5rem;
-    font-weight: 400;
-    color: #fff;
+.foodImg1 {
+  width: max-content;
+  height: 70%;
 }
 
-.serviceSection h1 span{
-    color: #f9dec7;
-    font-size: 5.5rem;
-    font-weight: 700;
+.serviceSection h1 {
+  font-size: 4.5rem;
+  font-weight: 400;
+  color: #fff;
 }
 
-.serviceDiv{
-    width: 100%;
-    display: grid;
-    grid-column-gap: 40px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+.serviceSection h1 span {
+  color: #f9dec7;
+  font-size: 5.5rem;
+  font-weight: 700;
 }
 
-.serviceCard{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 10px;
-    border-radius: 30px;
-    border: 5px solid #854f25;
+.serviceDiv {
+  width: 100%;
+  display: grid;
+  grid-column-gap: 40px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
-.serviceCard h2{
-    text-align: center;
+.serviceCard {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10px;
+  border-radius: 30px;
+  border: 5px solid #db8d50;
+}
+
+.serviceCard h2 {
+  text-align: center;
   font-family: "Montserrat", sans-serif;
-    color: #f9dec7;
+  color: #f9dec7;
+}
+
+.footer {
+  width: 100%;
+  padding: 20px 25px;
+  background-color: #db8d50;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.leftpartfooter {
+  display: flex;
+  align-items: end;
+  gap: 10px;
+}
+
+.leftpartfooter h4 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.rightpartfooter {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.rightpartfooter h4 {
+  color: #373737;
+  font-size: 1.6rem;
+}
+
+.socialLink {
+  display: flex;
+  gap: 10px;
+}
+
+.socialLink svg {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 500px) {
+  .bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50;
+    right: 0;
+    opacity: 0.2;
+  }
+
+  .msection {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .rightpart {
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+
+  .leftpart h1 {
+    font-size: 3rem;
+  }
+  .foodCard {
+    padding: 10px 15px;
+    border-radius: 12px;
+  }
+  .serviceDiv {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+
+  .serviceCard {
+    padding: 20px 10px;
+    border-radius: 12px;
+    border: 1px solid #db8d50;
+  }
+
+  .sicon {
+    width: 50%;
+    height: max-content;
+  }
+
+  .serviceCard h2 {
+   font-size: 1rem;
+  }
+
+  .footer{
+    display: flex;
+    flex-direction: column;
+  }
 }

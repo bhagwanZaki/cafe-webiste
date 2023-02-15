@@ -1,7 +1,7 @@
-import '../css/globals.css'
+import "../css/globals.css";
 import logo from "../assets/logo.png";
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -12,24 +12,26 @@ export default function RootLayout({ children }) {
       <head />
       <body>
         <div className="navBar">
-        <Image src={logo} className="logo" />
-        <div className="navitems">
-          <Link className='link' href="/">
-            Menu
+          <Link href={"/"}>
+            <Image src={logo} className="logo" />
           </Link>
-          <Link className='link' href="/">
-            Our Story
-          </Link>
-          <Link className='link' href="/">
-            Contact Us
-          </Link>
-          <Link className='link' href="/">
-            About us
-          </Link>
-        </div>
+          <div className="navitems">
+            <Link className="link" href="/menu">
+              Menu
+            </Link>
+            <Link className="link" href="/">
+              Our Story
+            </Link>
+            <Link className="link" href="/contact">
+              Contact Us
+            </Link>
+            <Link className="link" href="/">
+              About us
+            </Link>
+          </div>
         </div>
         {children}
-        </body>
+      </body>
     </html>
-  )
+  );
 }

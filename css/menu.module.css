@@ -1,0 +1,103 @@
+.mainSection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.mainSection h1{
+    width: 100%;
+    font-size: 5rem;
+    text-align: center;
+}
+.container {
+  padding: 8px;
+  min-height: 100vh;
+  columns: 4;
+  column-gap: 2px;
+}
+
+.bg {
+  max-width: 100%;
+  display: block;
+  border-radius: 15px;
+}
+
+.box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 2px;
+  transition: 300ms;
+  border-radius: 6px;
+}
+
+.box:hover {
+  opacity: 0.8;
+}
+
+.content {
+  transition: 300ms;
+  opacity: 0;
+  border-radius: 0px 0px 15px 15px;
+  width: 100%;
+  position: absolute;
+  padding: 20px;
+  padding-top: 60px;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.box:hover .content {
+  opacity: 1;
+}
+
+.title {
+  font-weight: 100;
+  font-size: 3rem;
+}
+
+.date {
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  
+}
+
+.floatBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 50;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #ff9dac;
+  text-decoration: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .container {
+    columns: 3;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    columns: 2;
+  }
+}
+@media (max-width: 450px) {
+  .container {
+    columns: 2;
+  }
+}

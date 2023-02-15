@@ -40,7 +40,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .logo{
-  width: 3%;
+  width: 70%;
   height: min-content;
 }
 
@@ -65,4 +65,24 @@ body::-webkit-scrollbar-thumb {
 .link:hover{
   border-bottom: 1px solid #F9DEC7;
   color: #F9DEC7;
+}
+
+@media (max-width:500px){
+  .navBar{
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    padding: 0px;
+  }
+
+  .navitems{
+    padding: 0px 1px;
+    padding-top: 2px;
+    gap: 20px;
+    margin: 0px;
+  }
+
+  .link{
+    text-align: center;
+  }
 }
