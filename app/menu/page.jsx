@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../../css/menu.module.css";
 import Image from "next/image";
-import { card } from "../../assets/dummy.json";
+import card  from "../../assets/dummy.json";
 
 function page() {
   return (
